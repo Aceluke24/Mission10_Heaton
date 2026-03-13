@@ -23,6 +23,7 @@ function BowlerList () {
                         <th>First Name</th>
                         <th>Middle Initial</th>
                         <th>Last Name</th>
+                        <th>Team Name</th>
                         <th>Address</th>
                         <th>City</th>
                         <th>State</th>
@@ -36,6 +37,7 @@ function BowlerList () {
                             <td>{bowler.bowlerFirstName}</td>
                             <td>{bowler.bowlerMiddleInit}</td>
                             <td>{bowler.bowlerLastName}</td>
+                            <td>{bowler.team?.teamName}</td>
                             <td>{bowler.bowlerAddress}</td>
                             <td>{bowler.bowlerCity}</td>
                             <td>{bowler.bowlerState}</td>
