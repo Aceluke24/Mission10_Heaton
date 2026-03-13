@@ -1,15 +1,15 @@
-namespace Mission10_Heaton.Data;
 using Microsoft.EntityFrameworkCore;
+using Mission10_Heaton.Models;
 
-public class BowlerDbContext :  DbContext
+namespace Mission10_Heaton.Data;
+
+public class BowlerDbContext : DbContext
 {
-    
     public BowlerDbContext(DbContextOptions<BowlerDbContext> options) : base(options)
     {
         
     }
 
     public DbSet<Bowler> Bowlers { get; set; }
-    public DbSet<Teams> Team { get; set; }
-    
+    public DbSet<Team> Teams { get; set; }
 }

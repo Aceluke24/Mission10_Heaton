@@ -20,6 +20,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.UseCors(x => x.WithOrigins("http://localhost:3000"));
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
