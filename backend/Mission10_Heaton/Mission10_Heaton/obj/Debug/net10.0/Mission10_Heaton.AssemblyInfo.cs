@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission10_Heaton")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f84bc80d53a9846cf38b207d1414c8091736584")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9165f5bc9565c42343686ff1354ecafcd7b1295")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission10_Heaton")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission10_Heaton")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

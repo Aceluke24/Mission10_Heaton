@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Mission10_Heaton.Data;
 
 namespace Mission10_Heaton.Controllers;
@@ -18,7 +19,10 @@ public class BowlerController : ControllerBase
     [HttpGet(Name = "GetBowlers")]
     public IEnumerable<Bowler> Get()
     {
-        var bowlers = _dbContext.Bowlers.ToList();
+        var bowlers = _dbContext.Bowlers
+            .Include(b => b.Team)
+            .Where(b => b.Team.TeamName == "Marlins" || b.Team.TeamName == "Sharks")
+            .ToList();
 
         return (bowlers);
 
