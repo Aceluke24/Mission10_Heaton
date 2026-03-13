@@ -16,7 +16,6 @@ function BowlerList () {
 
     return (
         <>
-            <h1>Bowler List: </h1>
             <table>
                 <thead>
                     <tr>
